@@ -1,0 +1,22 @@
+## Notable Scripts:
+
+-> copyFn: This script is used to Copy Jobs and Folders in Jenkins
+-> deleteFn: This script is used to Delete Jobs and Folders in Jenkins
+-> variables: This file contains the variables that are required for the Py scripts in this folder. Enter your Host, username and password in this script file
+-> startscriptFn: This script connects all other script files available in the Scripts folder. Running this Script with the relevant arguments will perform the required action.
+
+## How to Use:
+
+From your command prompt/shell call the "startscriptFn.py" file with the required arguments
+
+## Example for Usage:
+
+PLEASE MAKE SURE THE VARIABLES.PY FILE IS FILLED WITH HOST,USERNAME, PASSWORD BEFORE USING THE SCRIPTS
+-> For Copying folders/jobs: python startscriptFn.py Copy SourceFolder/SourceJob DestinationFolder/DestinationFolder
+-> For Deleting folders/jobs: python startscriptFn.py Delete FolderName/JobName
+
+## Special Usage of Scripts:
+
+-> If you do not want to use startscriptFn.py file, you can directly use the required function files
+-> For Copying: python copyFn.py SourceFolder/SourceJob DestinationFolder/DestinationFolder
+-> For Deleting folders/jobs: python deleteFn.py FolderName/JobName
